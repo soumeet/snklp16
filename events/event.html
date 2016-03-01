@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Events</title>
+		<meta name="description" content="An experimental interactive room slideshow based on the prototype concept by Bilal Mechairia's Dribbble shot 'Spaces'" />
+		<meta name="keywords" content="room, slideshow, 3d, perspective, animation, css, javascript, web development" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="logo_snklp.png">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css" />
+		<script src="js/modernizr-custom.js"></script>
+	</head>
+	<body>
+		<header class="codrops-header">
+			<div>
+                <!--<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Development/RainEffect/" title="Previous Demo"><span>Previous Demo</span></a>-->
+				<a href="../index.html"><img class="view__img" src="logo_snklp.png" width="120px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sankalp</a>
+			</div>
+		</header>
+        <p class="info info--size">View on a larger screen to see the site!</p>
+		<p class="info info--support">Your browser does not support this site!</p>
+		<div id="slideshow" class="slideshow">
+			<div class="slide">
+				<div class="scene">
+					<div class="views">
+						<div class="view view--rotate view--rotate-left">
+							<img class="view__img" src="img/assassin_creed.jpg" alt="Front" />
+							<div class="item item--fifa">
+								<img class="item__img" src="img/FIFA_11.png" alt="FIFA" data-transform-z="90" />
+								<div class="item__info">
+                                    <a href="/events/rules/fifa.docx"><img src="pdf-icon.png" width="30px">RULES</a>
+                                    <h3 class="item__title">Co-ordinators:</h3>
+									<div class="item__price">Faizan <sup>+919876543210</sup></div>
+								</div>
+								<button class="button button--close"><i class="icon icon--close"></i><span class="text-hidden">Close</span></button>
+							</div>
+							<div class="item item--nfs">
+								<img class="item__img" src="img/NFSMW_Logo.png" width="300px" alt="NFS" data-transform-z="80" />
+								<div class="item__info">
+                                    <a href="/events/rules/nfs.docx"><img src="pdf-icon.png" width="30px">RULES</a>
+									<h3 class="item__title">Co-ordinators:</h3>
+									<div class="item__price">Soumeet <sup>+919876543210</sup></div>
+								</div>
+								<button class="button button--close"><i class="icon icon--close"></i><span class="text-hidden">Close</span></button>
+							</div>
+                            <div class="item item--cs">
+								<img class="item__img" src="img/cs.png" alt="Cs" data-transform-z="60" />
+								<div class="item__info">
+                                    <a href="cs.pdf"><img src="pdf-icon.png" width="30px">RULES</a>
+									<h3 class="item__title">Co-ordinators:</h3>
+									<div class="item__price">Avinash <sup>+919876543210</sup></div>
+									<!--<button class="button button--buy"><i class="icon icon--shopping-cart"></i><span class="text-hidden">Add to cart</span></button>-->
+								</div>
+								<button class="button button--close"><i class="icon icon--close"></i><span class="text-hidden">Close</span></button>
+							</div>
+                            <div class="item item--roadrash">
+								<img class="item__img" src="img/Road_Rash_Logo.png" width="200px" alt="RoadRash" data-transform-z="60" />
+								<div class="item__info">
+                                    <a href="roadrash.pdf"><img src="pdf-icon.png" width="30px">RULES</a>
+									<h3 class="item__title">Co-ordinators:</h3>
+									<div class="item__price">Siddhanth <sup>+919876543210</sup></div>
+									<!--<button class="button button--buy"><i class="icon icon--shopping-cart"></i><span class="text-hidden">Add to cart</span></button>-->
+								</div>
+								<button class="button button--close"><i class="icon icon--close"></i><span class="text-hidden">Close</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="scene">
+					<div class="views">
+						<div class="view view--rotate view--rotate-right">
+							<img class="view__img" src="img/robot.jpg" alt="Front" />
+							<div class="item item--rowar">
+								<h1><img class="item__img" src="img/major_damage.png" alt="Robowar" data-transform-z="60" /><span>ROBOWAR</span></h1>
+								<div class="item__info">
+                                    <a href="robowar.pdf"><img src="pdf-icon.png" width="30px">RULES</a>
+									<h3 class="item__title">Co-ordinators:</h3>
+									<div class="item__price">Shaym <sup>+919876543210</sup></div>
+								</div>
+								<button class="button button--close"><i class="icon icon--close"></i><span class="text-hidden">Close</span></button>
+							</div>
+							<div class="item item--roexplo">
+								<h1><img class="item__img" src="img/Main-Image-510.png" alt="RoboExplorer" data-transform-z="60" /><span>ROBOEXPLORER</span></h1>
+								<div class="item__info">
+                                    <a href="roboexplorer.pdf"><img src="pdf-icon.png" width="30px">RULES</a>
+									<h3 class="item__title">Co-ordinators:</h3>
+									<div class="item__price">Sanjay <sup>+919876543210</sup></div>
+								</div>
+								<button class="button button--close"><i class="icon icon--close"></i><span class="text-hidden">Close</span></button>
+							</div>
+                             <div class="item item--roball">
+								<h1><img class="item__img" src="img/90mmplasticbocceblack-400.png" alt="Lamp" data-transform-z="60" /><span>&nbsp;&nbsp;ROBALL</span></h1>
+								<div class="item__info">
+                                    <a href="/events/rules/roball.doc"><img src="pdf-icon.png" width="30px">RULES</a>
+									<h3 class="item__title">Co-ordinators:</h3>
+									<div class="item__price">Ankita <sup>+919876543210</sup></div>
+								</div>
+								<button class="button button--close"><i class="icon icon--close"></i><span class="text-hidden">Close</span></button>
+							</div>
+							<div class="item item--puzzel">
+								<h1><img class="item__img" src="img/1_004.png" alt="Lamp" data-transform-z="60" /><span>&nbsp;&nbsp;ROPUZZ</span></h1>
+								<div class="item__info">
+                                    <a href="ropuzz.pdf"><img src="pdf-icon.png" width="30px">RULES</a>
+									<h3 class="item__title">Co-ordinators:</h3>
+									<div class="item__price">Vishal <sup>+919876543210</sup></div>
+								</div>
+								<button class="button button--close"><i class="icon icon--close"></i><span class="text-hidden">Close</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="scene">
+					<div class="views">
+						<div class="view">
+							<img class="view__img" src="img/junkyard_level_small.png" alt="Side" />
+							<div class="item item--junkyard">
+								<h1><img class="item__img" src="img/junkyard-silhouette.png" alt="Junkyard" data-transform-z="60" /><span>JUNKYARD</span></h1>
+								<div class="item__info">
+                                    <a href="junkyard.pdf"><img src="pdf-icon.png" width="30px">RULES</a>
+									<h3 class="item__title">Co-ordinators:</h3>
+									<div class="item__price">Gurmith <sup>+919876543210</sup></div>
+								</div>
+								<button class="button button--close"><i class="icon icon--close"></i><span class="text-hidden">Close</span></button>
+							</div>
+                            <div class="item item--momentica">
+								<h1><img class="item__img" src="img/vintage-camera-png-icon-camera.png" alt="Momemtica" data-transform-z="60" /><span>MOMENTICA</span></h1>
+								<div class="item__info">
+                                    <a href="momentica.pdf"><img src="pdf-icon.png" width="30px">RULES</a>
+									<h3 class="item__title">Co-ordinators:</h3>
+									<div class="item__price">Arijit <sup>+919876543210</sup></div>
+								</div>
+								<button class="button button--close"><i class="icon icon--close"></i><span class="text-hidden">Close</span></button>
+							</div>
+                            <div class="item item--quiz">
+								<h1><img class="item__img" src="img/quiz.png"="Quiz" data-transform-z="60" /><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUIZ</span></h1>
+								<div class="item__info">
+                                    <a href="quiz.pdf"><img src="pdf-icon.png" width="30px">RULES</a>
+									<h3 class="item__title">Co-ordinators:</h3>
+									<div class="item__price">Sayani <sup>+919876543210</sup></div>
+								</div>
+								<button class="button button--close"><i class="icon icon--close"></i><span class="text-hidden">Close</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="scene">
+					<div class="views">
+						<div class="view">
+							<img class="view__img" src="img/purple-puzzle_00441064.jpg" alt="Front" />
+                            <!-- to add -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="nav">
+				<a href="#" class="nav__item"><span class="text-hidden"></span></a>
+				<a href="#" class="nav__item"><span class="text-hidden"></span></a>
+				<a href="#" class="nav__item"><span class="text-hidden"></span></a>
+				<a href="#" class="nav__item"><span class="text-hidden"></span></a>
+			</nav>
+			<div class="titles">
+                <!-- <span class="title__sub">Hardcore Gamers</span>-->
+				<h2 class="title">Gaming</h2>
+				<h2 class="title">Robotics</h2>
+				<h2 class="title">Junkyard</h2>
+				<h2 class="title">Puzzle</h2>
+			</div>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			var slideshow = new Slideshow(document.getElementById('slideshow'));
+		})();
+		</script>
+	</body>
+</html>
