@@ -425,7 +425,7 @@
 
 .item--rowar {
 	top: 50px;
-	left: 50px;
+	left: 30px;
 }
 
 .item--rowar .item__img {
@@ -439,6 +439,24 @@
 
 .item--roexplo .item__img {
 	height: 120px;
+}
+
+.item--roball {
+	top: 250px;
+	left: 300px;
+}
+
+.item--roball .item__img {
+	height: 120px;
+}
+
+.item--puzzel {
+	top: 30px;
+	left: 300px;
+}
+
+.item--puzzel .item__img {
+	height: 130px;
 }
 
 /* junkyard */
@@ -466,26 +484,6 @@
 
 .item--quiz .item__img {
 	height: 100px;
-}
-
-
-/* others */
-.item--roball {
-	top: 250px;
-	left: 300px;
-}
-
-.item--roball .item__img {
-	height: 120px;
-}
-
-.item--puzzel {
-	top: 30px;
-	left: 300px;
-}
-
-.item--puzzel .item__img {
-	height: 130px;
 }
 
 @media screen and (max-height: 42em) {
