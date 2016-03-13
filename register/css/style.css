@@ -27,9 +27,16 @@ body{
 	background-image: url(http://p1.pichost.me/i/66/1903838.jpg);
 	font-family: 'Oxygen', sans-serif;
 }
-
+.head1{
+    margin-left: 8em;
+    padding: 17px 30px;
+	color: #fff;
+	float: center;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 24px;
+}
 .main{
-	margin:7em auto 0;
+	margin:0em auto 0;
 	width:44%;
 }
 
@@ -44,60 +51,6 @@ body{
 	font-size: 1em;
 	text-align:left;
 	font-family: 'Oxygen', sans-serif;
-}
-
-ul.facebook{
-	list-style:none;
-	padding:0;
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-ms-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	background: #3B5998;
-	padding: 12px;
-}
-i.fb{
-	width:30px;
-	height:30px;
-	background:url(../images/fb.png);
-	float:left;
-	margin-right: 2em;
-}
-ul.facebook li{
-	color:#fff;
-	font-size:1em;
-	float: left;
-	margin-top: 5px;
-}
-ul.facebook:hover{
-	background: #5D7BBA;
-}
-
-ul.twitter{
-	list-style:none;
-	padding:0;
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-ms-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	background:#55ACEE;
-	padding: 12px;
-}
-i.tw{
-	width:30px;
-	height:30px;
-	background:url(../images/tw.png);
-	float:left;
-	margin-right: 2em;
-}
-ul.twitter li{
-	color:#fff;
-	font-size:1em;
-	float: left;
-	margin-top: 5px;
-}
-ul.twitter:hover{
-	background: #71B8ED;
 }
 span.term a{
 	color: #1888A8;
@@ -135,7 +88,7 @@ span.term a:hover{
 	padding: 14px;
 	width: 94%;
 	font-size: 1em;
-	margin: 18px 0px;
+	margin: 12px 0px;
 	border:none;
 	color: #666666;
 	cursor: pointer;
@@ -159,11 +112,12 @@ span.term a:hover{
 	text-align: center;
 }
 input[type=submit] {
-	padding: 17px 30px;
+	padding: 14px 30px;
 	color: #fff;
 	float: right;
 	font-family: 'Oxygen', sans-serif;
 	background: #40A46F;
+    margin: 12px 0px;
 	border: 1px solid #40A46F;
 	cursor: pointer;
 	font-size: 18px;
@@ -263,7 +217,7 @@ i.fb, i.tw {
 }
 @media (max-width:480px){
 .main {
-margin: 7em auto 0;
+margin: 0em auto 0;
 width:70%;
 }
 }
@@ -286,17 +240,16 @@ width:70%;
 	max-height: 100%;
 }
 .gen{
-	background: none repeat scroll 0 0 #fff;
+    /*background: none repeat scroll 0 0 #fff;*/
 	color: #008900;
-	font-size: 20px;
-	margin: 15px auto;
+	font-size: 15px;
+	margin: 12px auto;
 	padding: 5px;
 	text-align: center;
 }
 .err{
-	background: none repeat scroll 0 0 #FF0000;
 	color: #008900;
-	font-size: 20px;
+	font-size: 15px;
 	margin: 15px auto;
 	padding: 5px;
 	text-align: center;
