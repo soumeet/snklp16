@@ -162,7 +162,8 @@ blockquote {
 
 footer,
 footer .copynote {
-    background-image: url(http://wallpaperbeta.com/wallpaper_2560x1440/background_texture_blue_2560x1440_hd-wallpaper-351304.jpg); /* Dark color/Footer color */
+    /*  background-image: url(http://wallpaperbeta.com/wallpaper_2560x1440/background_texture_blue_2560x1440_hd-wallpaper-351304.jpg);*/
+    background-color:  #197cd9;
 }
 
 

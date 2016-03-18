@@ -1565,7 +1565,7 @@ footer .copynote{
 }
 
 footer .segment{
-    padding-bottom: 20px;
+    /*padding-bottom: 10px;*/
 }
 
 footer .social a{
@@ -1811,9 +1811,9 @@ footer .social a{
     .carousel-caption {
         top: 30%;
         margin: 0;
-   
+        height: 100%;
+        width: 100%;
     }
-
     .carousel-caption h1 {
         font-size: 25px;
     }
@@ -1967,3 +1967,14 @@ body {
     border:1px solid #f00;
 }
 
+.countdown {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+}
+
+.carousel-ft {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+}
