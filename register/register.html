@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="shortcut icon" href="bigLogo.png">
+<link rel="shortcut icon" href="../assets/images/bigLogo.png">
 <title>Registration</title>
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,12 +67,14 @@ $("#register_form").submit(function(e)
             url : formURL,
   			type: "POST",
   			data : data,
-            success: function (res) {
-  								 if(res=='1'){
+            dataType: 'json',
+            success: function (data) {
+  								 if(data.res=='1'){
   									$('#show_register_msg').html('<div class=gen>Thank you very much, You\'ve been registered.</div>');
+                                    alert("Your registration ID: "+data.id);
                                     $("#register_form")[0].reset();
-
-  								 }else if(res=='5'){
+                                    $('#show_register_msg').html('<div class=gen>Please provide us with correct details.</div>');
+  								 }else if(data.res=='5'){
                                      $('#show_register_msg').html('<div class=err>Please enter a valid email address</div>');
                                  }else{
                                      $('#show_register_msg').html('<div class=err>Error in registration.</div>');

@@ -1,4 +1,5 @@
 <?php
+header("Content-type: application/json");
 // Email Setting
 //=======================================
 $admin_email = "info@snklp.com";
@@ -86,8 +87,10 @@ if(isset($_POST['tb_name'])) {
 	echo "<br>COLLEGE: ".$college;
 */ 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-	   echo 5;
-	   exit;
+        $data=array('res'=>'5', 'id'=>'SNKLP0x00');
+        $js_str = json_encode($data);
+        echo $js_str;
+        exit;
 	}
     else{
         $sql = "insert into db_users (
@@ -104,7 +107,12 @@ if(isset($_POST['tb_name'])) {
 	   if ($result) {
 		   //echo "<b>"."<i>"."<br>Data Insertion Succession"."</i>"."</b>";
            $id=mysqli_insert_id($con);
-           echo "1";
+           if($id < 100)
+               $data=array('res' => '1', 'id' => 'SNKLP00'.$id);
+           else if($id < 1000)
+               $data=array('res' => '1', 'id' => 'SNKLP0'.$id);
+           $js_str = json_encode($data);
+           echo $js_str;
            exit;
         }
     }

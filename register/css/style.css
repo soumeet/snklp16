@@ -24,7 +24,8 @@ img{max-width:100%;}
 /*end reset*/
 /****-----start-body----****/
 body{
-	background-image: url(http://p1.pichost.me/i/66/1903838.jpg);
+	/*background-image: url(http://p1.pichost.me/i/66/1903838.jpg);*/
+    background: #666666;
 	font-family: 'Oxygen', sans-serif;
 }
 .head1{
@@ -241,7 +242,7 @@ width:70%;
 }
 .gen{
     /*background: none repeat scroll 0 0 #fff;*/
-	color: #008900;
+	color: #000000;
 	font-size: 15px;
 	margin: 12px auto;
 	padding: 5px;
