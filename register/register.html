@@ -27,15 +27,17 @@
         </div>
 		<form method="post" name="register_form" id="register_form" action="../assets/php/contact.php">
 		   <div class="lable-2">	
-                    <input type="text" class="text" name="tb_name" id="tb_name" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}" id="active">
+                    <input type="text" class="text" name="tb_name" id="tb_name" value="Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}" id="active">
                 <div class="clear"> </div>
 		   </div>
 		   <div class="lable-2">
 		        <input type="text" class="text" name="tb_email" id="tb_email" value="your@email.com " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your@email.com ';}">
 		   </div>
             <div class="lable-2">
-                <input type="text" name="tb_mobile" id="tb_mobile" value="+91" name="phone">
-                <input type="text" name="tb_college" id="tb_college" value="College" name="college">
+                <input type="text" class="text" name="tb_mobile" id="tb_mobile" value="+91" name="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '+91';}">
+            </div>
+            <div class="lable-2">
+                <input type="text" class="text" name="tb_college" id="tb_college" value="College" name="college" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'College Name';}">
             </div>
 		   <div class="submit">
 			  <input type="submit" name="bt_register" id="bt_register" value="Register" >
