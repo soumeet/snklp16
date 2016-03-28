@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="../assets/images/bigLogo.png">
+<title>Registration</title>
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfonts-->
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+</head>
+<body>
+    <header class="codrops-header">
+			<div>
+				<a href="../index.html"><img class="view__img" src="../assets/images/bigLogo.png" width="80px"></a>
+			</div>
+            <div>
+                <a href="../index.html"><img class="view__img" src="../assets/images/snklp.png" width="100px"></a>
+                <!--<a href="../index.html"><img class="view__img" src="register.png" width="200px" ></a>-->
+            </div>
+		</header>
+    <div class="main">
+        <div class="head1">
+           <p>Registration</p>
+        </div>
+		<form method="post" name="register_form" id="register_form" action="../assets/php/contact.php">
+		   <div class="lable-2">	
+                    <input type="text" class="text" name="tb_name" id="tb_name" value="Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}" id="active">
+                <div class="clear"> </div>
+		   </div>
+		   <div class="lable-2">
+		        <input type="text" class="text" name="tb_email" id="tb_email" value="your@email.com " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your@email.com ';}">
+		   </div>
+            <div class="lable-2">
+                <input type="text" class="text" name="tb_mobile" id="tb_mobile" value="+91" name="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '+91';}">
+            </div>
+            <div class="lable-2">
+                <input type="text" class="text" name="tb_college" id="tb_college" value="College" name="college" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'College Name';}">
+            </div>
+		   <div class="submit">
+			  <input type="submit" name="bt_register" id="bt_register" value="Register" >
+		   </div>
+		   <div class="clear"> </div>
+            <div id="show_register_msg"><div class=gen>Please provide us with correct details.</div></div>
+		</form>
+		<!-----//end-main---->
+		</div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script>
+
+$("#register_form").submit(function(e)
+{
+    $('#show_register_msg').html('<div class=gen>Registering...</div>');
+  	var tb_name = $('#tb_name').val();
+    var tb_email = $('#tb_email').val();
+    var tb_mobile = $('#tb_mobile').val();
+  	var tb_college = $('#tb_college').val();
+    var formURL = $(this).attr("action");
+    var data = {
+                    tb_name:tb_name,
+  					tb_email:tb_email,
+                    tb_mobile:tb_mobile,
+  					tb_college:tb_college
+  		        }
+    $.ajax(
+  		{   
+            url : formURL,
+  			type: "POST",
+  			data : data,
+            dataType: 'json',
+            success: function (data) {
+  								 if(data.res=='1'){
+  									$('#show_register_msg').html('<div class=gen>Thank you very much, You\'ve been registered.</div>');
+                                    alert("Your registration ID: "+data.id);
+                                    $("#register_form")[0].reset();
+                                    $('#show_register_msg').html('<div class=gen>Please provide us with correct details.</div>');
+  								 }else if(data.res=='5'){
+                                     $('#show_register_msg').html('<div class=err>Please enter a valid email address</div>');
+                                 }else{
+                                     $('#show_register_msg').html('<div class=err>Error in registration.</div>');
+                                 }
+  							}
+  		});
+  		e.preventDefault();	//STOP default action
+  	});
+  	</script>
+</body>
+</html>
