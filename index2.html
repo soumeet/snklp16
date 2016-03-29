@@ -11,6 +11,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Main stylesheet -->
     <link href="assets/css/hallooou.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/countdown/jquery.countdown.css" />
     <!-- Color stylesheet -->
     <link href="assets/css/colors_2.css" rel="stylesheet">
     <!-- Plugin stylesheets -->
@@ -76,11 +77,14 @@
 				            </div>
                             <img src="assets/images/snklp%202016.png" width="300px" alt="" title=""/>
                             <p class="intro-text animated slideInUp">9th and 10th April</p>
-                            
-                            
-                        </div>
+                            <!--cd start-->
+                            <div id="countdown"></div>
+                            <!--cd end-->
+                        </div><!-- /.item -->
                         
                         <div class="carousel-ft">
+                            <!--<span style="float: left;"><img src="assets/images/nitmas.png" width="220px" alt="" title=""/></span>
+                            <span style="float: right;"><img src="assets/images/tnu.png" width="220px" alt="" title=""/></span>-->
                             <div class="col-md-9 ">
                                 <a href="www.nitmas.edu.in" title=""><img src="assets/images/nitmas.png" width="220px" alt="" title=""/></a>
                             </div>
@@ -205,7 +209,7 @@
                                         <!--<i class="fa fa-camera fa-3x"></i>-->
                                         <a href="events/momentika.html" target="_blank">
                                             <h4>Momentika</h4>
-                                            <p>Capture moments</p>
+                                            <p>Caputre moments</p>
                                         </a>
                                     </div><!-- /.row -->
                                 </div><!-- /.col-md-4 -->
@@ -232,7 +236,7 @@
                                 
                             </div><!-- /.row -->
                         </div><!-- /.container -->
-                        </div>
+
                     </div><!-- /.row -->
                 </div><!-- /.container -->
             </section><!-- /.section -->
@@ -253,45 +257,32 @@
                         <div class="item col-xs-4 col-md-3 i">
                         <!--delete frm here-->
                             <a href="" title="">
-                                <img src="assets/images/friends.jpg" class="img-responsive">
+                                <img src="assets/images/GANAPATI.jpg" class="img-responsive">
                             </a>
                         </div>
-                        <div class="item col-xs-4 col-md-3 i">
-                        <!--delete frm here-->
-                            <a href="" title="">
-                                <img src="assets/images/ganapati.jpg" class="img-responsive">
-                            </a>
-                        </div>
+                        <div class="row">
                         <div class="item col-xs-4 col-md-3 i">
                         <!--delete frm here-->
                             <a href="" title="">
                                 <img src="assets/images/rational.jpg" class="img-responsive">
                             </a>
                         </div>
+                        <div class="row">
                         <div class="item col-xs-4 col-md-3 i">
                         <!--delete frm here-->
                             <a href="" title="">
                                 <img src="assets/images/haque.jpg" class="img-responsive">
                             </a>
                         </div>
-                    </div><br>
-                        
-                    <div class="row">
-                        <div class="item col-xs-4 col-md-3 i">
-                        </div>
+                        <div class="row">
                         <div class="item col-xs-4 col-md-3 i">
                         <!--delete frm here-->
                             <a href="" title="">
-                                <img src="assets/images/hackerearth.jpg" class="img-responsive">
+                                <img src="assets/images/LOGO%20FRIENDS%20-%204.png" class="img-responsive">
                             </a>
                         </div>
-                        <div class="item col-xs-4 col-md-3 i">
-                        <!--delete frm here-->
-                            <a href="" title="">
-                                <img src="assets/images/stylishyarn.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
+                    </div><!-- /.row -->
+
                 </div><!-- /.container -->
             </section><!-- /.our-clients -->
             
@@ -326,6 +317,26 @@
                             </div><!-- /.project-info -->
                             <div class="full-project">
                                 <a href="assets/archive/4.JPG">View Image <i class="fa fa-chevron-right"></i></a>
+                            </div><!-- /.full-project -->
+                        </div><!-- /.item -->
+                        
+                        <div class="item recent-project">
+                            <img src="assets/archive/5.JPG" alt="">
+                            <div class="project-info">
+                                <h3>sankalp'15</h3>
+                            </div><!-- /.project-info -->
+                            <div class="full-project">
+                                <a href="assets/archive/5.JPG">View Image <i class="fa fa-chevron-right"></i></a>
+                            </div><!-- /.full-project -->
+                        </div><!-- /.item -->
+                        
+                        <div class="item recent-project">
+                            <img src="assets/archive/6.JPG" alt="">
+                            <div class="project-info">
+                                <h3>sankalp'15</h3>
+                            </div><!-- /.project-info -->
+                            <div class="full-project">
+                                <a href="assets/archive/6.JPG">View Image <i class="fa fa-chevron-right"></i></a>
                             </div><!-- /.full-project -->
                         </div><!-- /.item -->
                         
@@ -400,6 +411,16 @@
                         </div><!-- /.item -->
                         
                         <div class="item recent-project">
+                            <img src="assets/archive/21.JPG" alt="">
+                            <div class="project-info">
+                                <h3>sankalp'15</h3>
+                            </div><!-- /.project-info -->
+                            <div class="full-project">
+                                <a href="assets/archive/21.JPG">View Image <i class="fa fa-chevron-right"></i></a>
+                            </div><!-- /.full-project -->
+                        </div><!-- /.item -->
+                        
+                        <div class="item recent-project">
                             <img src="assets/archive/22.JPG" alt="">
                             <div class="project-info">
                                 <h3>sankalp'15</h3>
@@ -410,12 +431,42 @@
                         </div><!-- /.item -->
                         
                         <div class="item recent-project">
+                            <img src="assets/archive/23.JPG" alt="">
+                            <div class="project-info">
+                                <h3>sankalp'15</h3>
+                            </div><!-- /.project-info -->
+                            <div class="full-project">
+                                <a href="assets/archive/23.JPG">View Image <i class="fa fa-chevron-right"></i></a>
+                            </div><!-- /.full-project -->
+                        </div><!-- /.item -->
+                        
+                        <div class="item recent-project">
                             <img src="assets/archive/27.JPG" alt="">
                             <div class="project-info">
                                 <h3>sankalp'15</h3>
                             </div><!-- /.project-info -->
                             <div class="full-project">
                                 <a href="assets/archive/27.JPG">View Image <i class="fa fa-chevron-right"></i></a>
+                            </div><!-- /.full-project -->
+                        </div><!-- /.item -->
+                        
+                        <div class="item recent-project">
+                            <img src="assets/archive/28.JPG" alt="">
+                            <div class="project-info">
+                                <h3>sankalp'15</h3>
+                            </div><!-- /.project-info -->
+                            <div class="full-project">
+                                <a href="assets/archive/28.JPG">View Image <i class="fa fa-chevron-right"></i></a>
+                            </div><!-- /.full-project -->
+                        </div><!-- /.item -->
+                        
+                        <div class="item recent-project">
+                            <img src="assets/archive/30.JPG" alt="">
+                            <div class="project-info">
+                                <h3>sankalp'15</h3>
+                            </div><!-- /.project-info -->
+                            <div class="full-project">
+                                <a href="assets/archive/30.JPG">View Image <i class="fa fa-chevron-right"></i></a>
                             </div><!-- /.full-project -->
                         </div><!-- /.item -->
                         
@@ -450,6 +501,46 @@
                         </div><!-- /.item -->
                         
                         <div class="item recent-project">
+                            <img src="assets/archive/34.JPG" alt="">
+                            <div class="project-info">
+                                <h3>sankalp'15</h3>
+                            </div><!-- /.project-info -->
+                            <div class="full-project">
+                                <a href="assets/archive/34.JPG">View Image <i class="fa fa-chevron-right"></i></a>
+                            </div><!-- /.full-project -->
+                        </div><!-- /.item -->
+                        
+                        <div class="item recent-project">
+                            <img src="assets/archive/35.JPG" alt="">
+                            <div class="project-info">
+                                <h3>sankalp'15</h3>
+                            </div><!-- /.project-info -->
+                            <div class="full-project">
+                                <a href="assets/archive/35.JPG">View Image <i class="fa fa-chevron-right"></i></a>
+                            </div><!-- /.full-project -->
+                        </div><!-- /.item -->
+                        
+                        <div class="item recent-project">
+                            <img src="assets/archive/37.JPG" alt="">
+                            <div class="project-info">
+                                <h3>sankalp'15</h3>
+                            </div><!-- /.project-info -->
+                            <div class="full-project">
+                                <a href="assets/archive/37.JPG">View Image <i class="fa fa-chevron-right"></i></a>
+                            </div><!-- /.full-project -->
+                        </div><!-- /.item -->
+                        
+                        <div class="item recent-project">
+                            <img src="assets/archive/38.JPG" alt="">
+                            <div class="project-info">
+                                <h3>sankalp'15</h3>
+                            </div><!-- /.project-info -->
+                            <div class="full-project">
+                                <a href="assets/archive/38.JPG">View Image <i class="fa fa-chevron-right"></i></a>
+                            </div><!-- /.full-project -->
+                        </div><!-- /.item -->
+                        
+                        <div class="item recent-project">
                             <img src="assets/archive/40.JPG" alt="">
                             <div class="project-info">
                                 <h3>sankalp'15</h3>
@@ -460,32 +551,12 @@
                         </div><!-- /.item -->
                         
                         <div class="item recent-project">
-                            <img src="assets/archive/44.JPG" alt="">
+                            <img src="assets/archive/42.JPG" alt="">
                             <div class="project-info">
                                 <h3>sankalp'15</h3>
                             </div><!-- /.project-info -->
                             <div class="full-project">
-                                <a href="assets/archive/44.JPG">View Image <i class="fa fa-chevron-right"></i></a>
-                            </div><!-- /.full-project -->
-                        </div><!-- /.item -->
-                        
-                        <div class="item recent-project">
-                            <img src="assets/archive/45.JPG" alt="">
-                            <div class="project-info">
-                                <h3>sankalp'15</h3>
-                            </div><!-- /.project-info -->
-                            <div class="full-project">
-                                <a href="assets/archive/45.JPG">View Image <i class="fa fa-chevron-right"></i></a>
-                            </div><!-- /.full-project -->
-                        </div><!-- /.item -->
-                        
-                        <div class="item recent-project">
-                            <img src="assets/archive/46.JPG" alt="">
-                            <div class="project-info">
-                                <h3>sankalp'15</h3>
-                            </div><!-- /.project-info -->
-                            <div class="full-project">
-                                <a href="assets/archive/46.JPG">View Image <i class="fa fa-chevron-right"></i></a>
+                                <a href="assets/archive/42.JPG">View Image <i class="fa fa-chevron-right"></i></a>
                             </div><!-- /.full-project -->
                         </div><!-- /.item -->
                         
@@ -738,9 +809,9 @@
                                 <div class="col-md-2">
                                     <div class="team-member">
                                         <figure>
-                                            <img src="assets/team/4_rohan.jpg" alt="" class="img-responsive">
+                                            <img src="assets/team/3_shyam.jpg" alt="" class="img-responsive">
                                             <figcaption>
-                                                <p>Rohan Nevatia<br>4th Year CSE</p>
+                                                <p>Shatam Roy Bhattacharjee<br>3rd Year ME</p>
                                             </figcaption>
                                         </figure>
                                     </div><!-- /.team-member -->
@@ -755,28 +826,6 @@
                                 <div class="col-md-2">
                                     <div class="team-member">
                                         <figure>
-                                            <img src="assets/team/4_rakib.jpg" alt="" class="img-responsive">
-                                            <figcaption>
-                                                <p>Rakib Mondal<br>4th Year ECE</p>
-                                            </figcaption>
-                                        </figure>
-                                    </div><!-- /.team-member -->
-                                </div><!-- /.col-md-4 -->
-                                
-                                <div class="col-md-2">
-                                    <div class="team-member">
-                                        <figure>
-                                            <img src="assets/team/4_neha.jpg" alt="" class="img-responsive">
-                                            <figcaption>
-                                                <p>Neha Kumari<br>4th Year CSE</p>
-                                            </figcaption>
-                                        </figure>
-                                    </div><!-- /.team-member -->
-                                </div><!-- /.col-md-4 -->
-                                
-                                <div class="col-md-2">
-                                    <div class="team-member">
-                                        <figure>
                                             <img src="assets/team/3_sanjay.jpg" alt="" class="img-responsive">
                                             <figcaption>
                                                 <p>Sanjay Kumar<br>3rd Year ECE</p>
@@ -784,13 +833,24 @@
                                         </figure>
                                     </div><!-- /.team-member -->
                                 </div><!-- /.col-md-4 -->
-                                 
-                                 <div class="col-md-2">
+                                
+                                <div class="col-md-2">
                                     <div class="team-member">
                                         <figure>
-                                            <img src="assets/team/3_vishal.jpg" alt="" class="img-responsive">
+                                            <img src="assets/team/3_kajal.jpg" alt="" class="img-responsive">
                                             <figcaption>
-                                                <p>Vishal Shah Gupta<br>3rd Year ECE</p>
+                                                <p>Kajal Kumari<br>3rd Year ECE</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div><!-- /.team-member -->
+                                </div><!-- /.col-md-4 -->
+                                
+                                <div class="col-md-2">
+                                    <div class="team-member">
+                                        <figure>
+                                            <img src="assets/team/3_purnima.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <p>Purnima<br>3rd Year CSE</p>
                                             </figcaption>
                                         </figure>
                                     </div><!-- /.team-member -->
@@ -817,6 +877,17 @@
                                         </figure>
                                     </div><!-- /.team-member -->
                                 </div><!-- /.col-md-4 -->
+
+                                <div class="col-md-2">
+                                    <div class="team-member">
+                                        <figure>
+                                            <img src="assets/team/3_somodip.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <p>Soumyadip Chatterjee<br>3rd Year ECE</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div><!-- /.team-member -->
+                                </div><!-- /.col-md-4 -->
                                  
                             </div><!-- /.row -->
                             <div class="row">
@@ -824,14 +895,14 @@
                                 <div class="col-md-2">
                                     <div class="team-member">
                                         <figure>
-                                            <img src="assets/team/3_purnima.jpg" alt="" class="img-responsive">
+                                            <img src="assets/team/3_vishal.jpg" alt="" class="img-responsive">
                                             <figcaption>
-                                                <p>Purnima<br>3rd Year CSE</p>
+                                                <p>Vishal Singh Shah<br>3rd Year ECE</p>
                                             </figcaption>
                                         </figure>
                                     </div><!-- /.team-member -->
                                 </div><!-- /.col-md-4 -->
-                                                            
+                                
                                 <div class="col-md-2">
                                     <div class="team-member">
                                         <figure>
@@ -910,7 +981,7 @@
                                             </figcaption>
                                         </figure>
                                     </div><!-- /.team-member -->
-                                </div><!-- /.col-md-4 -->  
+                                </div><!-- /.col-md-4 -->
                                 
                                 <div class="col-md-2">
                                     <div class="team-member">
@@ -984,6 +1055,28 @@
                                 <div class="col-md-2">
                                     <div class="team-member">
                                         <figure>
+                                            <img src="assets/team/3_sanjana.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <p>Sanjana Jaiswal<br>3rd Year CSE</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div><!-- /.team-member -->
+                                </div><!-- /.col-md-4 -->
+                                
+                                <div class="col-md-2">
+                                    <div class="team-member">
+                                        <figure>
+                                            <img src="assets/team/3_sayani.JPG" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <p>Sayani Mitra<br>3rd Year BT</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div><!-- /.team-member -->
+                                </div><!-- /.col-md-4 -->
+                                
+                                <div class="col-md-2">
+                                    <div class="team-member">
+                                        <figure>
                                             <img src="assets/team/3_shaheen.jpg" alt="" class="img-responsive">
                                             <figcaption>
                                                 <p>Shaheen Akhtar<br>3rd Year BT</p>
@@ -995,32 +1088,9 @@
                                 <div class="col-md-2">
                                     <div class="team-member">
                                         <figure>
-                                            <img src="assets/team/3_somodip.jpg" alt="" class="img-responsive">
+                                            <img src="assets/team/3_shubham.jpg" alt="" class="img-responsive">
                                             <figcaption>
-                                                <p>Soumyadip Chattopadhyay<br>3rd Year ECE</p>
-                                            </figcaption>
-                                        </figure>
-                                    </div><!-- /.team-member -->
-                                </div><!-- /.col-md-4 -->
-                                
-                                
-                                <div class="col-md-2">
-                                    <div class="team-member">
-                                        <figure>
-                                            <img src="assets/team/3_kajal.jpg" alt="" class="img-responsive">
-                                            <figcaption>
-                                                <p>Kajal Kumari<br>3rd Year ECE</p>
-                                            </figcaption>
-                                        </figure>
-                                    </div><!-- /.team-member -->
-                                </div><!-- /.col-md-4 -->
-                                
-                                <div class="col-md-2">
-                                    <div class="team-member">
-                                        <figure>
-                                            <img src="assets/team/2_vaibhav_ece.jpg" alt="" class="img-responsive">
-                                            <figcaption>
-                                                <p>Vaibhav Gupta<br>2nd Year ECE</p>
+                                                <p>Shubham Saha<br>3rd Year ECE</p>
                                             </figcaption>
                                         </figure>
                                     </div><!-- /.team-member -->
@@ -1126,9 +1196,9 @@
                                 <div class="col-md-2">
                                     <div class="team-member">
                                         <figure>
-                                            <img src="assets/team/3_shyam.jpg" alt="" class="img-responsive">
+                                            <img src="assets/team/2_isha_cse.jpg" alt="" class="img-responsive">
                                             <figcaption>
-                                                <p>Shyamroy Bhattacharjee<br>3rd Year ME</p>
+                                                <p>Isha Gupta<br>2nd Year CSE</p>
                                             </figcaption>
                                         </figure>
                                     </div><!-- /.team-member -->
@@ -1159,14 +1229,13 @@
                                 <div class="col-md-2">
                                     <div class="team-member">
                                         <figure>
-                                            <img src="assets/team/2_vikas_ece.jpg" alt="" class="img-responsive">
+                                            <img src="assets/team/2_priyankar_eee.jpg" alt="" class="img-responsive">
                                             <figcaption>
-                                                <p>Vikas Kumar<br>2nd Year ECE</p>
+                                                <p>Priyankar Mukherjee<br>2nd Year EEE</p>
                                             </figcaption>
                                         </figure>
                                     </div><!-- /.team-member -->
                                 </div><!-- /.col-md-4 -->
-                                
                             </div>    
                             <div class="row">
                                 <div class="col-md-2">
@@ -1207,7 +1276,7 @@
                                         <figure>
                                             <img src="assets/team/2_sadam_eee.jpg" alt="" class="img-responsive">
                                             <figcaption>
-                                                <p>Saddam Hussain<br>2nd Year EEE</p>
+                                                <p>Sadam Hussain<br>2nd Year EEE</p>
                                             </figcaption>
                                         </figure>
                                     </div><!-- /.team-member -->
@@ -1242,7 +1311,7 @@
                                         <figure>
                                             <img src="assets/team/2_sayandip_ece.jpg" alt="" class="img-responsive">
                                             <figcaption>
-                                                <p>Sayandip Chattopadhyay<br>2nd Year ECE</p>
+                                                <p>Sayandip Chattopadhya<br>2nd Year ECE</p>
                                             </figcaption>
                                         </figure>
                                     </div><!-- /.team-member -->
@@ -1326,7 +1395,73 @@
                                         </figure>
                                     </div><!-- /.team-member -->
                                 </div><!-- /.col-md-4 -->
-                                                            
+                                
+                                <div class="col-md-2">
+                                    <div class="team-member">
+                                        <figure>
+                                            <img src="assets/team/2_vaibhav_ece.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <p>Vaibhav Gupta<br>2nd Year ECE</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div><!-- /.team-member -->
+                                </div><!-- /.col-md-4 -->
+                                
+                                <div class="col-md-2">
+                                    <div class="team-member">
+                                        <figure>
+                                            <img src="assets/team/2_vikas_ece.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <p>Vikas Kumar<br>2nd Year ECE</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div><!-- /.team-member -->
+                                </div><!-- /.col-md-4 -->
+                                
+                                <div class="col-md-2">
+                                    <div class="team-member">
+                                        <figure>
+                                            <img src="assets/team/3_simpa.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <p>Simpa Mondal<br>3rd Year CSE</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div><!-- /.team-member -->
+                                </div><!-- /.col-md-4 -->
+                                
+                                <div class="col-md-2">
+                                    <div class="team-member">
+                                        <figure>
+                                            <img src="assets/team/3_suchismita.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <p>Suchismita Saha<br>3rd Year CSE</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div><!-- /.team-member -->
+                                </div><!-- /.col-md-4 -->
+                                <!--
+                                <div class="col-md-2">
+                                    <div class="team-member">
+                                        <figure>
+                                            <img src="assets/team/3_ananyam.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <p>Ananya Mishra<br>3rd Year CSE</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-2">
+                                    <div class="team-member">
+                                        <figure>
+                                            <img src="assets/team/3_udita.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <p>Udita <br>2nd Year BT</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                -->
                             </div>
                         </div>
                         
@@ -1459,11 +1594,16 @@
 
 
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery.min.js"></script>
-
+    
     <!-- Bootstrap Core JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <!-- countdown -->
+    <!-- jQuery -->
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="assets/countdown/jquery.countdown.js"></script>
+		<script src="assets/countdown/cdscript.js"></script>
+
+    
 
     <!-- Plugin JavaScript -->
     <script src="assets/js/plugins/wow.min.js"></script>
@@ -1479,6 +1619,7 @@
     <script src="assets/js/plugins/additional-methods.min.js"></script>
     <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoVKfEihX__NdMwdDysA6Vve6PE9Ierj4"></script>-->
     <script src="assets/js/script.js"></script>
+    <!--<script src="assets/js/jquery.countdown.min.js"></script>-->
     <!-- Custom JavaScript -->
     <script src="assets/js/hallooou.js"></script>
     <script>
