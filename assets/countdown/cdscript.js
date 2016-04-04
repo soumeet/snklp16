@@ -1,13 +1,15 @@
 $(function(){
 	
 	var note = $('#note'),
-		ts = new Date(2016, 3, 9),
+		//ts = new Date(2016, 3, 9),
+        ts= 1460172600000,
 		newYear = true;
 	
 	if((new Date()) > ts){
 		// The new year is here! Count towards something else.
 		// Notice the *1000 at the end - time must be in milliseconds
 		ts = (new Date()).getTime() + 10*24*60*60*1000;
+        //ts= 1460192400;
 		newYear = false;
 	}
 		
