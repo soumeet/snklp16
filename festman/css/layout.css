@@ -1,0 +1,57 @@
+#wrapper{
+	height : 1000px;
+	width : 1000px;
+	background-color: white;
+}
+#header{
+		height: 50px;
+	width: 1000px;
+	background-color: DeepSkyBlue;
+	float: left;
+}
+#menu{
+	height: 870px;
+	width: 80px;
+	background-color: DodgerBlue;
+	float: left;
+}
+#content{
+	height: 870px;
+	width: 840px;
+	background-color: white;
+	float: left;
+}
+#comment{
+	height: 870px;
+	width: 80px;
+	background-color: DodgerBlue;
+	float: left;
+}
+#footer{
+	height: 80px;
+	width: 1000px;
+	background-color: DeepSkyBlue;
+	float: left;
+}
+#container{
+	width: 840px;
+	height: 870px;
+	overflow: hidden;
+	margin: 50px auto;
+	background-color: white;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

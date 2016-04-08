@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event List</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/lato.css" >
+  	<link rel="stylesheet"  type="text/css" href="css/montserrat.css" >
+  	<link rel="stylesheet" href="css/dynamics.css">
+  	<script src="js/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="user_validate.js"></script>
+	<script type="text/javascript" src="group_validate.js"></script>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      </button>
+      <a class="navbar-brand" href="login.html">Sankalp'16</a>
+    </div>
+  </div>
+</nav>
+    
+<div class="container" style="width: 100%;">
+        <form method="post" id="fm_event_list" name="fm_event_list" action="php/event_search.php">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="form-group">
+                        <select class="form-control" name="cb_event" id="cb_event">
+                            <option value="EVENT">Event</option>
+                            <option value="ROE">RoExplorer</option>
+                            <option value="ROB">RoBoxing</option>
+                            <option value="ROS">RoSoccer</option>
+                            <option value="CS">Counter Strike</option>
+                            <option value="FIFA">Fifa</option>
+                            <option value="NFS">Need For Speed</option>
+                            <option value="MOM">Momentika</option>
+                            <option value="JUN">JunkYard</option>
+                            <option value="COD">CodeClash</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <input class="btn btn-default" type="submit" value="Search" name="bt_search" id="bt_search">
+                </div>
+            </div>
+        </form>
+	<h3>Group List</h3>
+    <div id="show_contact_msg">#message</div>
+	<table id="table_result" class="table table-hover">
+	   <thead>
+			<tr>
+				<th>ID</th>
+				<th>Group Name</th>
+				<th>Member 1</th>
+				<th>Member 2</th>
+				<th>Member 3</th>
+				<th>Member 4</th>
+				<th>Member 5</th>
+			</tr>
+		</thead>
+        <tbody id="results">
+                <tr>
+                    <td id="gid">$id</td>
+                    <td id="gn">$name</td>
+                    <td id="m1">$mem1</td>
+                    <td id="m2">$mem2</td>
+                    <td id="m3">$mem3</td>
+                    <td id="m4">$mem4</td>
+                    <td id="m5">$mem</td>
+                </tr>
+        </tbody>
+    </table>
+</div>
+    
+<!--<footer class="text-center">
+  <h5>copyright@2016</h5>
+</footer>-->
+<script>
+$("#fm_event_list").submit(function(e){
+    
+    var cb_event = $('#cb_event').val();
+    var formURL = $(this).attr("action");
+    var data = {
+                    cb_event:cb_event
+    }
+    
+    if (cb_event=="EVENT") {
+		alert("Select a Event");
+		return false;
+	}
+  
+    $.ajax({   
+            url : formURL,
+  			type: "POST",
+  			data : data,
+            dataType: 'json',
+            success: function (data) {
+                                 //alert(data);
+  								 if(data!=''){
+                                    $("#table_result tbody > tr").remove(); 
+                                    //alert("found "+data.id+" "+data.name);
+                                    $('#show_contact_msg').html(data.length+' records found');
+                                    //alert(data[0][0]);
+                                    //alert('<a href="php/user_details.php?id='+data[0][3]+'">'+data[0][3]+'</a>');
+                                    //data[0][3]='<a href="php/user_details.php?id='+data[0][3]+'">'+data[0][3]+'</a>';
+                                    for(var i=0;i<data.length;i++){
+                                        /*data[i][3]='<a href="php/user_details.php?id='+data[i][3]+'">'+data[i][3]+'</a>';
+                                        data[i][4]='<a href="php/user_details.php?id='+data[i][4]+'">'+data[i][4]+'</a>';
+                                        data[i][5]='<a href="php/user_details.php?id='+data[i][5]+'">'+data[i][5]+'</a>';
+                                        data[i][6]='<a href="php/user_details.php?id='+data[i][6]+'">'+data[i][6]+'</a>';
+                                        data[i][7]='<a href="php/user_details.php?id='+data[i][7]+'">'+data[i][7]+'</a>';*/
+                                        $('#table_result > tbody:last-child').append('<tr><td>'+data[i][0]+'</td><td>'+data[i][1]+'</td><td>'+data[i][3]+'</td><td>'+data[i][4]+'</td><td>'+data[i][5]+'</td><td>'+data[i][6]+'</td><td>'+data[i][7]+'</td></tr>');
+                                    };
+                                    //$("a").attr("href", "php/user_details.php?id='+data[i][0]+'");
+  								 }else{
+                                     $('#show_contact_msg').html('no records found');
+                                     $("#table_result tbody > tr").remove(); 
+                                 }
+  							}
+  		});
+    
+  		e.preventDefault();
+
+});
+
+</script>
+</body>
+</html>
