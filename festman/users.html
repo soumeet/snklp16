@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User List</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/lato.css" >
+  	<link rel="stylesheet"  type="text/css" href="css/montserrat.css" >
+  	<link rel="stylesheet" href="css/dynamics.css">
+  	<script src="js/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      </button>
+      <a class="navbar-brand" href="login.html">Sankalp'16</a>
+    </div>
+  </div>
+</nav>
+    
+<div class="container" style="width: 100%;">
+        <form method="post" name="fm_usr_search" id="fm_usr_search" action="php/user_search.php">
+				<div class="row">
+                <div class="col-md-2 col-md-offset-2">
+                    <div class="form-group">
+                        <select class="form-control" name="cb_by" id="cb_by">
+                            <option value="ID">ID</option>
+                            <option value="NAME">Name</option>
+							<option value="MOBILE">Mobile</option>
+				            <option value="EMAIL">Email</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon2">@</span>
+				        <input type="text" class="form-control" aria-describedby="sizing-addon2" name="tb_type" id="tb_type" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+				    </div>
+                </div>
+                <div class="col-md-1">
+                    <input class="btn btn-default" type="submit" value="Search" name="bt_search" id="bt_search">
+                </div>
+            </div>
+			</form>
+			<h3>User List</h3>
+			<div id="user_msg">#message</div>
+			<table id="usr_table_result" class="table table-hover">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Mobile</th>
+						<th>Email ID</th>
+						<th>College</th>
+					</tr>
+				</thead>
+				<tbody id="results">
+                    <tr>
+                        <td>$id</td>
+                        <td>$name</td>
+                        <td>$mobile</td>
+                        <td>$email</td>
+                        <td>$college</td>
+                    </tr>
+				</tbody>
+			</table>
+</div>
+    
+<!--<footer class="text-center">
+  <h5>copyright@2016</h5>
+</footer>-->
+<script>
+$("#fm_usr_search").submit(function(e){
+    var cb_by = $('#cb_by').val();
+    var tb_type = $('#tb_type').val().toUpperCase();
+    var formURL = $(this).attr("action");
+    var data = {
+                    cb_by:cb_by,
+                    tb_type:tb_type
+    }
+    $.ajax({   
+            url : formURL,
+  			type: "POST",
+            data : data,
+            dataType: 'json',
+            success: function (data) {
+                                 //alert(data);
+  								 if(data!=''){
+                                    $("#usr_table_result tbody > tr").remove();
+                                    $('#user_msg').html(data.length+' records found');
+                                    //alert(data[0][0]);
+                                    for(var i=0;i<data.length;i++){
+                                        $('#usr_table_result > tbody:last-child').append('<tr><td>'+data[i][0]+'</td><td>'+data[i][1]+'</td><td>'+data[i][2]+'</td><td>'+data[i][3]+'</td><td>'+data[i][4]+'</td></tr>');
+                                    };
+  								 }else{
+                                     $('#user_msg').html('no records found');
+                                     $("#table_result tbody > tr").remove(); 
+                                 }
+  							}
+  		});
+    
+  		e.preventDefault();
+
+});
+</script>
+</body>
+</html>
